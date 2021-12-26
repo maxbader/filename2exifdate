@@ -1,6 +1,6 @@
 # file name to exif date
-This python script is able to parse file names of media date such as _jpg_ or _mp4_ files.
-It detects encoded time stamps and uses this time stamps to set exif information.
+This python script is able to parse file names of date timestamps.
+If a timestamp is used it can execute the _exiftool_ command to write exif date entries in your media files.
 ## Usage
 ```
 usage: filenamedate2exifdate.py [-h] --input i [i ...] [--prefix p] [--format f] [--exifcmd EXIFCMD] [--date_tags DATE_TAGS [DATE_TAGS ...]] [--echo] [--echo_only]
