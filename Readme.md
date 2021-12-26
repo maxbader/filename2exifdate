@@ -16,8 +16,8 @@ options:
   --echo                prints the exiftool command
   --echo_only           used to prevent the command execution
 ```
-### examples
-#### single images
+### Examples
+#### Single files
 Signal images
 ```
 python ./filenamedate2exifdate.py --echo_only --prefix signal- --format YYYY-MM-DD-hh-mm-ss-ccc --date_tags alldates FileModifyDate --input signal-2021-02-20-08-59-20-104.jpg 
@@ -30,7 +30,7 @@ WhatsApp video
 ```
 python ./filenamedate2exifdate.py --echo_only --prefix VID- --format YYYYMMDD-WAcccc --date_tags alldates FileModifyDate --input VID-20190609-WA0019.mp4 
 ```
-#### patch processing
+#### Patch processing
 Signal images
 ```
 find . -name 's*.jpg' -exec python ./filenamedate2exifdate.py --echo_only --prefix signal- --format YYYY-MM-DD-hh-mm-ss-ccc --date_tags alldates FileModifyDate --input {} \;
