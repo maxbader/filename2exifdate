@@ -17,6 +17,13 @@ options:
   --echo_only           used to prevent the command execution
 ```
 ### Examples
+#### Prepair files
+```
+fdupes -rdN ./                                        # remove duplicates
+rename "s/ //g" *                                     # remove spaces
+rename 'y/A-Z/a-z/' *.{jpg,jpeg,mp4,JPG,JPEG,MP4}     # to lower case
+rename 's/.jpeg/.jpg/' *.jpeg  # jpeg to jpg          # rename jpeg to jpg
+```
 #### Single files
 Signal images
 ```
@@ -47,10 +54,12 @@ find . -name 'V*.mp4' -exec python ./filenamedate2exifdate.py --echo_only --pref
 ## useful commands
 
 ```
-rename 'y/A-Z/a-z/' *     # to lower case
-rename 's/.jpeg/.jpg/' *  # jpeg to jpg
+fdupes -rdN ./  # remove duplicates 
+rename "s/ //g" * # remove spaces 
+rename 'y/A-Z/a-z/' *.{jpg,jpeg,mp4,JPG,JPEG,MP4}     # to lower case
+rename 's/.jpeg/.jpg/' *.jpeg  # jpeg to jpg
 exiftool -overwrite_original -Artist="Max M" -Copyright="Max M" -Author="Max M"  *.{jpg,mp4}
-exiftool signal-*.jpg '-FileName<CreateDate'       -ext jpg -d "%Y-%m-%d--%H-%M-%S-%%-.c.%%e"
+exiftool signal-*.jpg '-FileName<CreateDate'    -ext jpg -d "%Y-%m-%d--%H-%M-%S-%%-.c.%%e"
 exiftool IMG-*.jpg '-FileName<CreateDate'       -ext jpg -d "%Y-%m-%d--%H-%M-%S-%%-.c.%%e"
 exiftool VID-*.mp4 '-FileName<CreateDate'       -ext mp4 -d "%Y-%m-%d--%H-%M-%S-%%-.c.%%e"
 ```
