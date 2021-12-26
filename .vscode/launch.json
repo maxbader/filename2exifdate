@@ -11,7 +11,7 @@
             "program": "filenamedate2exifdate.py",
             "console": "integratedTerminal",
             "args": [
-                "camera--2021-12-14--18-15-01--0.jpg"
+                "signal-2021-02-20-08-59-20-104.jpg"
             ],
         },
         {
@@ -21,7 +21,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "signal-2021-02-20-08-59-20-104.jpg",
+                "signal-2021-02-20-08-59-20-104.jpg"
             ],
         }
     ]
