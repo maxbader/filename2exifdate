@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: filenamedate2exifdate.py",
+            "type": "python",
+            "request": "launch",
+            "program": "filenamedate2exifdate.py",
+            "console": "integratedTerminal",
+            "args": [
+                "camera--2021-12-14--18-15-01--0.jpg"
+            ],
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "signal-2021-02-20-08-59-20-104.jpg",
+            ],
+        }
+    ]
+}
