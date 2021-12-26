@@ -42,7 +42,7 @@ def set_exif_date(filename, date_str, date_tags, exifcmd, echo, echo_only):
 
     command = exifcmd + " -overwrite_original "
     for tag in date_tags:
-        command = command + "'-" + tag + "=" + date_str + "'"
+        command = command + "'-" + tag + "=" + date_str + "' "
     command = command + " " + filename
     if echo or echo_only:
         print(command)
