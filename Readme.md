@@ -1,6 +1,9 @@
-# file name to exif date
-This python script is able to parse file names of date timestamps.
-If a timestamp is used it can execute the _exiftool_ command to write exif date entries in your media files.
+# Date in file name to exif date
+This python script is able to parse a file names of date timestamps. 
+The timestamp is then used to update the files exif information by calling the __exiftool__ command.
+
+Uisng the the program arguements one is able to costimize date format encoded in the file name to suit media data stored/exported for messengers such as Signal or WhatsApp.
+
 ## Usage
 ```
 usage: filenamedate2exifdate.py [-h] --input i [i ...] [--prefix p] [--format f] [--exifcmd EXIFCMD] [--date_tags DATE_TAGS [DATE_TAGS ...]] [--echo] [--echo_only]
